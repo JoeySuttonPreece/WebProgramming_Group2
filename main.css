@@ -1,0 +1,29 @@
+body {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: comic sans ms;
+}
+
+.box-container {
+    width: 100%;
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(97, 95, 0);
+    line-height: 200px;
+}
+
+.gross {
+    width: 205px;
+}
