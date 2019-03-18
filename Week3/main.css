@@ -1,0 +1,35 @@
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.header {
+    background-color: rgb(42, 153, 42);
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    flex: 1 1;
+}
+
+.menu > * {
+    background-color: lightgray;
+}
+
+.article {
+    flex: 3 3;
+}
+
+.side-bar {
+    flex: 1 1;
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+.right {
+    text-align: right;
+}
