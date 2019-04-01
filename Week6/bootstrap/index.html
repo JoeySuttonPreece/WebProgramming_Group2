@@ -7,7 +7,6 @@
     <title>BootStrap Testing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -27,14 +26,35 @@
             </div>
         </div>
     </div>
-    <div class="timer">
-        
+    <div class="clock">
+        <div class="container">
+            <div class="row">
+                <div class="col hour"></div>
+                <div class="col minute"></div>
+                <div class="col second"></div>
+                <div class="col milli"></div>
+            </div>
+            <div class="row">
+                <div class="col align-middle big"></div>
+            </div>
+        </div>
     </div>
-    <div class="clock"></div>
+    <div class="timer">
+        <div class="container">
+            <div class="row">
+                <div class="col hour"></div>
+                <div class="col minute"></div>
+                <div class="col second"></div>
+                <div class="col milli"></div>
+            </div>
+            <div class="row">
+                <input class="col toggle" type="button", value="Start new timer for: 1 hour">
+            </div>
+        </div>
+    </div>
 
 
-
-
+    <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
