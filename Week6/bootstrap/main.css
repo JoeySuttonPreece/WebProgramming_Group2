@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+}
+
+.flex-test > * > * > div {
+    min-height: 200px;
+    outline: 1px dotted red;
+    outline-offset: -1px;
+}
+
