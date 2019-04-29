@@ -31,7 +31,7 @@ var myListener = (e) => {
     xEl = buttonT5.offsetLeft + buttonT5.offsetWidth / 2;
     yEl = buttonT5.offsetTop + buttonT5.offsetHeight / 2;
 
-    radius2 = (buttonT5.offsetWidth / 2) ** 2 + (buttonT5.offsetHeight / 2) ** 2;
+    radius = ((buttonT5.offsetWidth / 2) ** 2 + (buttonT5.offsetHeight / 2) ** 2) ** 0.5;
     
     e = e || window.event;
     
@@ -41,14 +41,10 @@ var myListener = (e) => {
     xDist = xMo - xEl;
     yDist = yMo - yEl;
 
-
-
-    distance2 = (xEl - xMo) ** 2 + (yEl - yMo) ** 2;
+    distance = ((xEl - xMo) ** 2 + (yEl - yMo) ** 2) ** 0.5;
     
-    if (distance2 < (radius2 + 40)) {
-        console.log("ohnoohnoohno", distance2);
-        buttonT5.style.transform = `translate(${-xDist / (distance2) * radius2}px, ${-yDist / distance2 * radius2}px)`;
-    }
+    buttonT5.style.transform = `translate(${-xDist / distance * radius * 2}px, ${-yDist / distance * radius * 2}px)`;
+    console.log(xDist, distance, radius);
 };
 
 document.addEventListener('mousemove', myListener, false);
