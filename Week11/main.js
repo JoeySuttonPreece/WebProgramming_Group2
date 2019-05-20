@@ -1,3 +1,5 @@
+import { h, app } from "hyperapp"
+
 function titleCase(text) {
     let terms = text.split(" ");
     terms = terms.map((term) => {
@@ -8,15 +10,16 @@ function titleCase(text) {
     return terms.join(" ");
 }
 
-// let _ = document.querySelector("#_");
-let items = document.querySelector("#items");
-let add = document.querySelector("#add");
-let entry = document.querySelector("#entry");
 
-add.onclick = () => {
-    if (entry.value != "") {
-        let newItem = document.createElement("div");
-        newItem.appendChild(document.createTextNode(titleCase(entry.value)));
-        items.appendChild(newItem);
-    }
-};
+
+app({
+    init: () => 0,
+    view: state => (
+        <div>
+      <h1>{state}</h1>
+      <button onclick={state => state - 1}>-</button>
+      <button onclick={state => state + 1}>+</button>
+    </div>
+  ),
+  node: document.getElementById("app")
+})

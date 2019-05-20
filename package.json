@@ -1,0 +1,23 @@
+{
+  "name": "webprogramming_group2",
+  "version": "1.0.0",
+  "description": "By: Joey Sutton Preece",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeySuttonPreece/WebProgramming_Group2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeySuttonPreece/WebProgramming_Group2/issues"
+  },
+  "homepage": "https://github.com/JoeySuttonPreece/WebProgramming_Group2#readme",
+  "dependencies": {
+    "hyperapp": "^1.2.9",
+    "parcel": "^1.12.3"
+  }
+}
