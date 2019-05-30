@@ -24,3 +24,13 @@ export const actions = {
         items: [...state.items.slice(0, index), ...state.items.slice(index + 1)]
     }),
 }
+
+export function titleCase(text) {
+    let terms = text.split(" ");
+    terms = terms.map((term) => {
+        let chars = term.split("");
+        chars[0] = chars[0].toUpperCase();
+        return chars.join("");
+    });
+    return terms.join(" ");
+}
