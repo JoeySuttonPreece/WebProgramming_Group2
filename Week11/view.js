@@ -14,8 +14,8 @@ export const view = (state) =>
         </span>
         <span>
             {item.completed ?
-            <i class="far fa-check-square"></i> :
-            <i class="far fa-square"></i>
+            <i class="far fa-check-square" onclick={(state) => actions.toggleItem(state, index)}></i> :
+            <i class="far fa-square" onclick={(state) => actions.toggleItem(state, index)}></i>
             }
         </span>
         {item.name}

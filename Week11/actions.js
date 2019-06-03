@@ -21,8 +21,17 @@ export const actions = {
     },
     removeItem: (state, index) => ({
         ...state,
-        items: [...state.items.slice(0, index), ...state.items.slice(index + 1)]
+        items: [...state.items.slice(0, index), ...state.items.slice(index + 1)],
     }),
+    toggleItem: (state, index) => {
+        let items = [...state.items];
+        items[index].completed = !items[index].completed;
+
+        return {
+            ...state,
+            items: items,
+        }
+    },
 }
 
 export function titleCase(text) {
