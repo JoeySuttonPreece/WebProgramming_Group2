@@ -6,5 +6,5 @@ import { view } from "./view.js"
 app({
     init: init,
     view: view,
-    node: document.querySelector("#app")
+    node: document.querySelector("#app"),
 })
