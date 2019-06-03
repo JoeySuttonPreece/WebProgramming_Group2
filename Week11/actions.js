@@ -9,7 +9,7 @@ export const actions = {
                 ...state,
                 input: "",
                 // items: [...state.items, {name: state.input, completed: false}],
-                items: [...state.items, {name: state.input, completed: false}],
+                items: [...state.items, {name: titleCase(state.input), completed: false}],
             }    
         }
         return state;
@@ -34,7 +34,7 @@ export const actions = {
     },
 }
 
-export function titleCase(text) {
+function titleCase(text) {
     let terms = text.split(" ");
     terms = terms.map((term) => {
         let chars = term.split("");
