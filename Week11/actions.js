@@ -8,7 +8,6 @@ export const actions = {
             return {
                 ...state,
                 input: "",
-                // items: [...state.items, {name: state.input, completed: false}],
                 items: [...state.items, {name: titleCase(state.input), completed: false}],
             }    
         }
