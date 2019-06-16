@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/JoeySuttonPreece/WebProgramming_Group2#readme",
   "dependencies": {
-    "hyperapp": "^2.0.0-beta.18",
-    "parcel": "^1.12.3"
+    "hyperapp": "^2.0.0-beta.18"
   }
 }
